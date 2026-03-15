@@ -51,46 +51,6 @@ urlshortener/
 └── .env.example
 ```
 
----
-
-## Quick Start
-
-### 1. Clone & install dependencies
-
-```bash
-git clone <repo>
-cd urlshortener
-python -m venv venv
-source venv/bin/activate          # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 2. Configure environment
-
-```bash
-cp .env.example .env
-# Edit .env with your database credentials and secret key
-```
-
-### 3. Start PostgreSQL + Redis (Docker)
-
-```bash
-docker compose up -d
-```
-
-### 4. Run migrations
-
-```bash
-python manage.py migrate
-python manage.py createsuperuser   # optional admin user
-```
-
-### 5. Start the dev server
-
-```bash
-python manage.py runserver
-```
-
 The API is now live at `http://localhost:8000`.
 
 ---
